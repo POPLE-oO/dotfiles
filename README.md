@@ -219,7 +219,7 @@ do
                 #インストールコマンドを表示
                 echo "...${installationCommand}:"
                 #インストールコマンドを実行
-                $installationCommand
+                eval $installationCommand
         fi
 done
 
