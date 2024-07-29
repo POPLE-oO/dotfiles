@@ -16,7 +16,7 @@ flags=()
 #       "{アプリ名4} {コマンド4}"
 #)
 commands=(
-        "command1 echo command1"
+        "Rust curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh"
         "command2 echo command2"
         "command3 echo command3"
         "command4 echo command4"
@@ -79,7 +79,7 @@ do
                 #インストールコマンドを表示
                 echo "...${installationCommand}:"
                 #インストールコマンドを実行
-                $installationCommand
+		eval $installationCommand
         fi
 done
 
