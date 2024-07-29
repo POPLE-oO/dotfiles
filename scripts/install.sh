@@ -17,7 +17,7 @@ flags=()
 #)
 commands=(
         "Rust curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh"
-        "command2 echo command2"
+        "Zed curl -f https://zed.dev/install.sh | sh"
         "command3 echo command3"
         "command4 echo command4"
         )
