@@ -18,7 +18,16 @@ flags=()
 commands=(
         "Rust curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh"
         "Zed curl -f https://zed.dev/install.sh | sh"
-        "command3 echo command3"
+        "Neovim  
+		sudo apt remove neovim -y &&
+		rm -rf ~/.local/bin/nvim ~/.local/bin/nvim-linux64/ &&
+		curl -LO https://github.com/neovim/neovim/releases/download/stable/nvim-linux64.tar.gz&&
+		sudo chmod 755 nvim-linux64.tar.gz &&
+		mv ./nvim-linux64.tar.gz ~/.local/bin/ &&
+		tar xzvf ~/.local/bin/nvim-linux64.tar.gz -C ~/.local/bin/ &&
+		rm ~/.local/bin/nvim-linux64.tar.gz -rf &&
+		ln -s ~/.local/bin/nvim-linux64/bin/nvim ~/.local/bin/nvim
+	" 
         "command4 echo command4"
         )
 
